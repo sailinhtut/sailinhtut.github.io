@@ -1,1 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV From</title>
+    <script src="https://kit.fontawesome.com/1314c4d0e8.js" crossorigin="anonymous"></script>
+    <style>
 
+        
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        progress 
+        {
+            accent-color: darkblue;
+        }
+
+        body 
+        {
+            width: 100%;
+            background-color: #FAFAFA;
+            display : flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        strong 
+        {
+            font-size: 18px;
+        }
+        
+        a
+        {
+            color: blue;
+        }
+
+        .column
+        {
+            display : flex;
+            flex-direction: column;
+            justify-items: start;
+            align-items: start;
+        }
+
+        .row
+        {
+            display : flex;
+            flex-direction: row;
+            justify-items: start;
+            align-items: start;
+            flex-wrap: wrap;
+        }
+
+        .mb-1
+        {
+            margin-bottom : 10px;
+        }
+
+        .mb-2
+        {
+            margin-bottom : 20px;
+        }
+
+        .focus-text
+        {
+            font-size: 20px;
+        }
+
+        .second-text
+        {
+            color : #8b8e8d;
+        }
+
+        p{
+            font-weight: 400px;
+            font-size: 16px;
+        }
+
+        ul 
+        {
+            margin-left: 30px;
+        }
+
+        
+        /* CV Form Widget */
+        .cv-form 
+        {
+            width : 900px;
+            height: auto;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            /* border : 1px solid rgba(128, 128, 128, 0.368); */
+            box-shadow : 0 0 5px rgba(0, 0, 0, 0.181);
+            margin-bottom: 100px;
+            border:1px solid #8b8e8d4f;
+           
+        }
+
+        .image-responsive
+        {
+            border-top-left-radius: 4px;
+        }
+
+        .cv-headline
+        {
+            height : auto;
+            background-color: #303846;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display : flex;
+            flex-wrap: wrap;
+            justify-items: center;
+            align-items: start;
+            color : #BCC6C3;
+        }
+
+        .cv-headline>.column 
+        {
+             padding : 30px 30px 0 30px;
+        }
+
+        .cv-main-board
+        {
+            height: auto;
+            position: relative;
+            width: 65%;
+            margin: 30px;
+            padding: 20px;
+            padding-top: 0;
+            margin-left: 30px;
+         
+        }
+
+        .cv-side-board
+        {
+            height: auto;
+            width: 22%;
+            border-left: 1px solid #8080804B;
+            margin: 30px;
+            margin-left: 0;
+            padding: 20px;
+            padding-top: 0;
+        }
+
+        .cv-title 
+        {
+            color : #303846;
+            font-weight: 400;
+            font-size: 35px;
+        }
+        
+
+        
+
+
+
+
+
+
+
+        /* CV Form End */
+
+
+        @media screen and (max-width:850px) {
+            .cv-form
+            {
+                width : 100%;
+            }
+
+            .cv-headline>.column
+            {
+                padding-bottom: 30px;
+            }
+
+            .image-responsive
+            {
+                border-radius:50%;
+                height: 200px;
+                align-self: center;
+                margin: 40px 40px 0 40px;
+                border: 1px solid grey;
+                box-shadow: 0 0 4px black;
+            }
+
+            .cv-main-board
+            {
+                width: 100%;
+                margin-left: 0;
+            }
+            
+            .cv-side-board 
+            {
+                width: 100%;
+                border-left: none;
+            } 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cv-form">
+
+
+        <!-- Headline Section -->
+        <div class="cv-headline">
+            <img src="sailinhtut_thumbnail.jpg" class="image-responsive" alt="Sai Lin Htut" height="220px" width="200px">
+            <div class="column">
+                <h1 style="color: white;font-size: 50px;">Sai Lin Htut</h1>
+                <p style="font-size:27px">Software Developer</p>
+                <br>
+                <br>
+                <div class="row" style="margin-bottom: 5px;">
+                    <p>
+                        <i class="fas fa-envelope"></i>&nbsp;&nbsp;
+                        sailinhtut76062@gmail.com
+                    </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>
+                        <i class="fas fa-phone"></i>&nbsp;&nbsp;
+                        +959252203838
+                    </p>
+                </div>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;
+                    No.(34-A), Man Pyay St.4 (East), Tharkayta Township, Yangon, Myanmar (Postal-11231)
+                </p> 
+            </div>
+        </div>
+
+        <!-- Main Section -->
+        <div class="row">
+
+            <div class="cv-main-board">
+                <div class="cv-title">Education</div>
+                <br>
+
+                <strong>Passed Matriculation Exam In Myanmar</strong>
+                <p class="second-text">BEHS-(3),High School Tharkayta, Yangon</p>
+                <p>
+                    Joined English Major (Distancy) at 2020 and unconditionally postponed at 2021.
+                </p>
+
+                <br><br>
+                <hr size="0.5">
+                <br>
+
+                <div class="cv-title">Employment</div>
+                <br>
+                <strong>Marketing Assistance</strong>
+                <div class="second-text">Dominus Company Limited,Yangon</div>
+                <p>
+                    I worked marketing related experiences at this company for 6 months.
+                </p>
+                <br>
+                
+                <strong>Freelancer Mobile Application Developer</strong>
+                <div class="second-text">Freelance</div>
+                
+                <br>
+
+                <p>
+                    Started at 2020, I dive into software development with the journey of Java and C# at <cite>KMD Computer Training Center</cite>.I have <cite>Syntax</cite> experiences on various kinds of related framework in those languages such as C,C#,Java,Python,HTML,CSS,Javascript,PHP and Dart.The most experienced are Dart,Python , PHP and Java.
+
+                    <br><br>
+
+                    I have ever developed Desktop Application Development with Tkinter (Python ) and JavaFX (Java).For backend acknowledge,I have been learn Django and PHP (Vanilla).Besides,I can also develope static web pages and this CV Form is my words.
+                    Now, I am learning on <b>Laravel</b> at <a href="https://mms-it.com"><cite>MMS-It</cite></a>.I also gave my times for android native development with Java for 3 months.Based on it,I fully dive to <b>Flutter Framework</b> to start a career untill now and developing on a sort of mobile applications.
+
+                    <br><br>
+
+                    <b>Features I Have Experienced </b>
+                    <ul>
+                        <li>Local Database ( sqflite,hive )</li>
+                        <li>Remote Database ( cloud_firestore and API )</li>
+                        <li>Authentication ( Email,Gmail,Facebook )</li>
+                        <li>API Interface for CRUD</li>
+                        <li>Notification ( local and push )</li>
+                        <li>State Management Solutions ( Provider,Get, ScopedModel,InheritedWidget )</li>
+                        <li>In App Purchase</li>
+                        <li>Admob Integration</li>
+                        <li>ect.,</li>
+
+                    </ul>
+
+                    <br><br>
+
+                    <b>My Journey Till 2022</b>
+                    <ul>
+                        <li>Manga Reading Application</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.successtechnology.notetask">Note Tasking Application</a></li>
+                        <li>Maintain and Upgrade Existing Flutter Apps (VPN,Music Player,Video Downloader) with Team</li>
+                    </ul>
+
+                </p>
+                
+            </div>
+
+            <div class="cv-side-board">
+                <div class="cv-title" style="font-size: 24px;" >Personal Details</div>
+                <br>
+                
+                <div class="second-text">Date of birth</div>
+                <p>January 3nd 2003</p>
+                <br>
+                
+                <div class="second-text">Place of birth</div>
+                <p>Insein Township, Yangon</p>
+                <br>
+
+                <div class="second-text">Gender</div>
+                <p>Male</p>
+                <br>
+
+                <div class="second-text">Civil Status</div>
+                <p>Unmarried</p>
+                <br>
+
+                <div class="second-text">Website</div>
+                <p><a href="https://sailinhtut.github.io">sailinhtut.github.io</a></p>
+                <br>
+
+                <div class="second-text">National ID</div>
+                <p>12/ARSANA(NAING) 247171</p>
+                <br>
+
+                <hr>
+                <br>
+
+                <div class="cv-title" style="font-size: 24px;">Skills</div>
+                <label for="eng-speak">English Speaking</label>
+                <progress id="eng-speak" value="50" max="100"> 32% </progress><br>
+                <label for="eng-speak">Team Communite</label>
+                <progress id="eng-speak" value="75" max="100"> 32% </progress><br>
+                <label for="eng-speak">Japanese Language</label>
+                <progress id="eng-speak" value="40" max="100"> 32% </progress>
+                <br><br>
+
+                <hr>
+                <br>
+                <div class="cv-title" style="font-size: 24px;">Languages</div>
+                <p>
+                    C,C#,Java,Python,PHP,
+                    <br>Javascript,Dart
+                </p>
+                <br><br>
+
+                <hr>
+                <br>
+                <div class="cv-title" style="font-size: 24px;">Hobbies</div>
+                <p>
+                    <ul style="list-style-type: square;">
+                        <li>Watching Movie</li>
+                        <li>Eating</li>
+                        <li>Drawing</li>
+                    </ul>
+                </p>
+
+                
+
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
